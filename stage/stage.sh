@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Note - this is NOT yet complete.
+
 echo Run as sudo for RHEL 7 CSB Desktops
 
 # read the previous build number

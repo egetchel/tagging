@@ -1,11 +1,11 @@
 #!/bin/bash
 
-echo Run as sudo for RHEL 7 CSB Desktops
+echo Note: Run as sudo for RHEL 7 CSB Desktops
 
 # Create the application, based off the latest corporate base image
 buildah bud -t sample-app .
 
-# tag
+# Add whatever tags are needed
 #buildah tag sample-app latest
 
 # Push to registry housing the dev images
