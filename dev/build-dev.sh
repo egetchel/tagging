@@ -6,7 +6,8 @@ echo Note: Run as sudo for RHEL 7 CSB Desktops
 buildah bud -t sample-app .
 
 # Add whatever tags are needed
-#buildah tag sample-app latest
+buildah tag sample-app latest
+buildah tag sample-app 1.0
 
 # Push to registry housing the dev images
 buildah push --creds egetchel+robot:WOQKCU86URPXYWFR6FYK9A4529ADNZ30553ZER0PKL8QQUDQFWZ7ESD9LV53CTEW sample-app quay.io/egetchel/dev
